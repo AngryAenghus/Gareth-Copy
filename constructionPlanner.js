@@ -1,7 +1,7 @@
 module.exports = {
 	buildRoads: function(from, to)
 	{
-		var path = Game.getRoom('1-1').findPath(from, to, { ignoreCreeps: true });
+		var path = Game.rooms(name).findPath(from, to, { ignoreCreeps: true });
 		for(var i in path)
 		{
 			var result = Game.rooms(name).createConstructionSite(path[i].x, path[i].y, Game.STRUCTURE_ROAD);
