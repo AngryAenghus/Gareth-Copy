@@ -23,7 +23,7 @@ module.exports =
 		if(!Memory.spawnQue.length) 
 			return;
 
-		var spawns = Game.getRoom(name).find(Game.MY_SPAWNS, {
+		var spawns = Game.rooms(name).find(Game.MY_SPAWNS, {
 			filter: function(spawn)
 			{
 				return spawn.spawning === undefined || spawn.spawning === null;
