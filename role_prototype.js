@@ -1,4 +1,4 @@
-//var room = Game.rooms[name];
+var room = Game.rooms[name];
 
 var proto = {
 	/**
