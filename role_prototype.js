@@ -1,3 +1,5 @@
+//var room = Game.rooms[name];
+
 var proto = {
 	/**
 	 * The creep for this role
@@ -47,7 +49,7 @@ var proto = {
 	getParts: function() {
 		var _ = require('lodash');
 
-		var extensions = Game.getRoom('1-1').find(Game.MY_STRUCTURES, {
+		var extensions = Game.rooms(name).find(Game.MY_STRUCTURES, {
 			filter: function(structure)
 			{
 				return (structure.structureType == Game.STRUCTURE_EXTENSION && structure.energy >= 200);
