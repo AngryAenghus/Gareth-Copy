@@ -4,7 +4,7 @@ module.exports = function(type, qued)
 		qued = false;
 
 	//Get the current room, then find all creeps in that room by their role
-	var room = Game.rooms(name);
+	var room = Game.rooms[name];
 
 	var count = room.find(Game.MY_CREEPS, {
 		filter: function(creep)
