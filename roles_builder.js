@@ -2,6 +2,8 @@
  * @TODO: Make it more carry heavy, make it have helpers
  * @type {{parts: *[], getParts: getParts, action: action}}
  */
+var room = Game.rooms[name];
+
 var builder = {
 	parts: [
 		[Game.WORK,Game.WORK,Game.CARRY,Game.CARRY,Game.MOVE],
