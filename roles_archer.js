@@ -1,4 +1,5 @@
 var proto = require('role_prototype');
+var room = Game.rooms[name];
 
 var archer = {
 	parts: [
@@ -16,7 +17,7 @@ var archer = {
 	{
 		var _= require('lodash');
 
-		var partsAllowed = Game.getRoom('1-1').find(Game.MY_STRUCTURES, {
+		var partsAllowed = Game.rooms(name).find(Game.MY_STRUCTURES, {
 			filter: function(structure)
 			{
 				return (structure.structureType == Game.STRUCTURE_EXTENSION && structure.energy >= 200);
